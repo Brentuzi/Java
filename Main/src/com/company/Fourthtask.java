@@ -1,11 +1,12 @@
 package com.company;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class Fourthtask {
 
     public static void task1() {
-        int[] arr = new int[]{1,6, 3, 4, 5};
+        int[] arr = new int[]{1, 6, 3, 4, 5};
         boolean result = false;
         for (int i = 0; i < arr.length - 1; i++) {
             if (arr[i] < arr[i + 1])
@@ -19,24 +20,26 @@ public class Fourthtask {
         if (result)
             System.out.println("OK");
     }
+
     public static void task2() {
         Scanner scan = new Scanner(System.in);
         System.out.println("Type lenght arr : ");
         int arrLength = scan.nextInt();
         int[] arr = new int[arrLength];
         for (int i = 0; i < arrLength; i++) {
-            System.out.print("arr [" + (i + 1)+"]= ");
+            System.out.print("arr [" + (i + 1) + "]= ");
             arr[i] = scan.nextInt();
         }
         System.out.println(Arrays.toString(arr));
 
     }
+
     public static void task3() {
-        int[] arr = new int[]{1,6, 3, 4, 5};
+        int[] arr = new int[]{1, 6, 3, 4, 5};
         int a;
-        a=arr[0];
-       arr[0]=arr[arr.length-1];
-       arr[arr.length-1]=a;
+        a = arr[0];
+        arr[0] = arr[arr.length - 1];
+        arr[arr.length - 1] = a;
         System.out.println(Arrays.toString(arr));
     }
 
@@ -54,6 +57,7 @@ public class Fourthtask {
             }
         }
     }
+
     private static int[] mergeParts(int[] leftArr, int[] rightArr) {
         int[] resultArr = new int[leftArr.length + rightArr.length];
         int leftPoint = 0;
@@ -65,14 +69,14 @@ public class Fourthtask {
                     resultArr[resultPoint++] = leftArr[leftPoint++];
                 } else
                     resultArr[resultPoint++] = rightArr[rightPoint++];
-            }
-            else if (rightPoint < rightArr.length)
+            } else if (rightPoint < rightArr.length)
                 resultArr[resultPoint++] = rightArr[rightPoint++];
             else if (leftPoint < leftArr.length)
                 resultArr[resultPoint++] = leftArr[leftPoint++];
         }
         return resultArr;
     }
+
     public static int[] splitArr(int[] arr) {
 
 
@@ -100,6 +104,7 @@ public class Fourthtask {
         rightArr = splitArr(rightArr);
         return mergeParts(leftArr, rightArr);
     }
+
     public static void task5() {
         int arrLength = 2 + (int) (Math.random() * 10);
         int[] arr = new int[arrLength];

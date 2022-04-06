@@ -46,21 +46,16 @@ public class Secondtask {
         System.out.print("Enter a number: ");
         int number3 = in.nextInt();
         System.out.print("Enter a number: ");
-        if (number2 > number1 && number3 > number2) {
-            System.out.println(true);
-        } else {
-            System.out.println(false);
-        }
+
+        System.out.println(number2 > number1 && number3 > number2);
+
     }
 
-    public static void task5() {
+    public static void task5(int[] arr) {
         System.out.println("------------");
-        int[] arr = new int[]{5, 6, 7, 3};
         System.out.println("Array " + Arrays.toString(arr));
-        if (arr[0] == 3 || arr[(arr.length - 1)] == 3)
-            System.out.println(true);
-        else
-            System.out.println(false);
+        System.out.println(arr[0] == 3 || arr[(arr.length - 1)] == 3);
+
     }
 
     public static void task6() {
