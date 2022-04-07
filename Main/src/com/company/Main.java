@@ -21,7 +21,7 @@ public class Main {
         Fourthtask.task3();
         Fourthtask.task4();
         Fourthtask.task5();
-*/
+
 
         JavaProgram.main();
 
@@ -36,8 +36,8 @@ public class Main {
         int years = currentDate2.get(Calendar.YEAR);
         house.setPar();
         house.showPar();
-
-
+*/
+Calculator.main();
 
 
     }
