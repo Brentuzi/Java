@@ -13,7 +13,7 @@ public class Calculator {
         System.out.println("Intput type of date : int, long, double:1 or 2 or 3");
         System.out.println("Intput type of date : 1      2      3");
         String numbType = scan.nextLine();
-        int x=0;
+        int x = 0;
 
         switch (numbType) {
             case ("1"):
@@ -122,7 +122,7 @@ public class Calculator {
     }
 
     public static void divI(int a, int b) {
-        System.out.println(0.1 * a / b);
+        System.out.println((0.1 * a / b)*10);
     }
 
     public static void sumL(long a, long b) {
@@ -139,6 +139,6 @@ public class Calculator {
     }
 
     public static void divL(long a, long b) {
-        System.out.println(0.1*a / b);
+        System.out.println((0.1*a / b)*10);
     }
 }
