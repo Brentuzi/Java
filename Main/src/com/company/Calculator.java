@@ -53,7 +53,7 @@ public class Calculator {
             System.out.println("Input second number");
             numb2 = scan.nextDouble();
         }
-     
+
         System.out.println("Input operation" +
                 "+," +
                 "-, " +
@@ -121,8 +121,8 @@ public class Calculator {
         System.out.println(a * b);
     }
 
-    public static void divI(long a, long b) {
-        System.out.println(a / b);
+    public static void divI(int a, int b) {
+        System.out.println(0.1 * a / b);
     }
 
     public static void sumL(long a, long b) {
@@ -139,6 +139,6 @@ public class Calculator {
     }
 
     public static void divL(long a, long b) {
-        System.out.println(a / b);
+        System.out.println(0.1*a / b);
     }
 }
