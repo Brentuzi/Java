@@ -11,6 +11,9 @@ public class Main {
         number.setN();
         number.getP();
 
-
+        Plane.Fender wing1 = new Plane.Fender(320);
+        Plane.Fender wing2 = new Plane.Fender(797.9);
+        wing1.showFender();
+        wing2.showFender();
     }
 }
